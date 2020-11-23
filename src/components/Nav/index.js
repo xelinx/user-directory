@@ -14,7 +14,7 @@ class Nav extends Component {
             <searchProvider>
                 <div style={{ paddingTop: 150 }}>
                     <Navbar fixed="top" bg="info" variant="light">
-                        <NavbarBrand href="#home" style={bStyle}>User's Directory</NavbarBrand>
+                        <NavbarBrand href="#home" style={bStyle}>The User Directory</NavbarBrand>
                         <Form inline>
                         </Form>
                     </Navbar>
