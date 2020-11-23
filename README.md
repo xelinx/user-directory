@@ -2,7 +2,7 @@
 
 Create an employee directory with React.
 
-Given a table of random users, when the user loads the page, a table of employees should render. The user should be able to sort the table by at least one category and filter the users by at least one property.
+Given a table of random users, when the user loads the page, a table of employees should render. The user is able to sort the table by ascending and descending order for first name, last name, and phone number, as well as filter the users by first name.
 
 ## Table of Contents
   - [Installation](#installation)
@@ -27,7 +27,7 @@ Emay Lin
 no test
 
 ## Screenshots of the Deployed Application 
-
+<img width="1438" alt="User Directory" src="https://user-images.githubusercontent.com/66236313/99957678-f1073080-2d3c-11eb-8e2f-eccac1b44da5.png">
 
 ## Review
 
