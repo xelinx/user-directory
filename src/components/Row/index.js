@@ -1,15 +1,15 @@
 import React from 'react';
 
-function Row({user}) {
+function Row({ user }) {
   return (
     <>
-    <tr>
+      <tr>
         <th><img alt="" src={user.picture.medium}></img></th>
         <th>{user.name.first}</th>
         <th>{user.name.last}</th>
         <th>{user.phone}</th>
         <th>{user.email}</th>
-    </tr>
+      </tr>
     </>
   )
 }

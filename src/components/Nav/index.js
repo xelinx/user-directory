@@ -12,7 +12,7 @@ class Nav extends Component {
     render() {
         return (
             <searchProvider>
-                <div style={{paddingTop: 150}}>
+                <div style={{ paddingTop: 150 }}>
                     <Navbar fixed="top" bg="info" variant="light">
                         <NavbarBrand href="#home" style={bStyle}>User's Directory</NavbarBrand>
                         <Form inline>

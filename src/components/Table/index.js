@@ -31,7 +31,7 @@ export default class Table extends React.Component {
     }
 
     render() {
-        const { usersArray, sortType, key, search } = this.state;
+        const { usersArray, sortType, search } = this.state;
 
         const Users = usersArray.filter(user => {
             return user.name.first.toLowerCase().indexOf(search.toLowerCase()) !== -1;
@@ -39,24 +39,9 @@ export default class Table extends React.Component {
 
         const sortedArray = Users.sort((a, b) => {
             const isReversed = (sortType === "asc") ? 1 : -1;
-
-            switch (key) {
-                case "first-name":
-                    return isReversed * a.name.first.localeCompare(b.name.first)
-                    break;
-                case "last-name":
-                    return isReversed * a.name.last.localeCompare(b.name.last)
-                    break;
-                case "phone":
-                    return isReversed * a.phone.localeCompare(b.phone)
-                    break;
-                case "email":
-                    return isReversed * a.email.localeCompare(b.email)
-                    break;
-                // no default
-            }
-        })
-
+            return isReversed * a.name.last.localeCompare(b.name.last)
+        }
+        )
 
         return (
             <>
@@ -69,7 +54,7 @@ export default class Table extends React.Component {
                             <th>First Name <button type="button" class="btn" onClick={this.changeSort}>Sort</button></th>
                             <th>Last Name <button type="button" class="btn" onClick={this.changeSort}>Sort</button></th>
                             <th>Phone Number <button type="button" class="btn" onClick={this.changeSort}>Sort</button></th>
-                            <th>Email<button type="button" class="btn" onClick={this.changeSort}></button>Sort</th>
+                            <th>Email</th>
                         </tr>
                     </thead>
                     <tbody>
